@@ -1,0 +1,102 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(137, 189, 235);
+}
+.action {
+  position: fixed;
+  top: 20%;
+  right: 50%;
+  transform: translate(50%);
+}
+.action .profile {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.action .profile img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.action .menu {
+  position: absolute;
+  top: 140px;
+  right: 13px;
+  background: #fff;
+  width: 300px;
+  border-radius: 15px;
+  height: 22rem;
+  opacity: 0;
+  transform: translateY(80%);
+  transition: all 0.5s ease-in-out;
+}
+.action .menu.active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 0.5s ease-in-out;
+}
+#description {
+  transition: all 0.5s ease-in-out;
+}
+#description.notActive {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.outlineActive {
+  opacity: 0;
+  transform: translateY(0%);
+  transition: all 0.5s ease-in-out;
+}
+.action .menu::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  right: 2rem;
+  top: -0.5rem;
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+.action .menu h3 {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  font-size: 25px;
+}
+.action .menu h3 span {
+  font-size: 15px;
+  color: #777;
+}
+.action .menu ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.action .menu ul li {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.action .menu ul li i {
+  opacity: 0.8;
+}
+.action .menu ul li a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: #000;
+}

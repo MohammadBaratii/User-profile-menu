@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- you can remove this following H1 tag. it's just for you to know what this project do -->
+    <h1 id="description">click on profile picture</h1>
+    <div class="action">
+      <div class="profile" onclick="toggleMenu()">
+        <img src="./images/v3_0518475.jpg" alt="" />
+      </div>
+      <div class="menu">
+        <h3>
+          Person <br />
+          <span>Web developer </span>
+        </h3>
+        <ul>
+          <li><i class="material-icons">account_circle</i><a href="#">My account</a></li>
+          <li><i class="material-icons">edit</i><a href="#">Edit my profile</a></li>
+          <li><i class="material-icons">email</i><a href="#">My messages</a></li>
+          <li><i class="material-icons">settings</i><a href="#">Setting</a></li>
+          <li><i class="material-icons">help_outline</i><a href="#">Support</a></li>
+          <li><i class="material-icons">logout</i><a href="#">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
